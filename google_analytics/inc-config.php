@@ -2,6 +2,12 @@
 	require_once('inc-functions.php');
 	/** This class file contains the static values used in the module */
 	class GAConfig {
+		
+		public function __construct()
+   		{
+        // FIX FOR Methods with the same name as their class will not be constructors in a future version of PHP
+    		}
+		
 		// List of rates used in the drop-down
 		private static $rateList = array('0 %' => 0, '1 %' => 1, '2 %' => 2, '3 %' => 3, '4 %' => 4, '5 %' => 5, '10 %' => 10, '15 %' => 15, '25 %' => 25, '33 %' => 33, '50 %' => 50, '66 %' => 66, '75 %' => 75, '100 %' => 100);
 		
