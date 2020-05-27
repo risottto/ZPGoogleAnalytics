@@ -28,6 +28,11 @@ zp_register_filter(getOption(GAConfig::getConfItem('TrackImageViewsPosition','pr
 
 class GoogleAnalytics {
 
+	public function __construct()
+   	 {
+        // FIX FOR Methods with the same name as their class will not be constructors in a future version of PHP
+    	}
+	
 	// Constructor: set all the option defaults
 	public function GoogleAnalytics() {
 		//$conflist = GAConfig::getConf();
